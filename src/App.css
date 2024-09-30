@@ -1,0 +1,166 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+/* Add responsive styles */
+@media (max-width: 768px) {
+    .contact-info {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .contact-info div {
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .contact-info {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .contact-info div {
+      margin-right: 20px;
+    }
+  }
+  
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+p div {
+    margin-left: 50px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+    font-size: 16px;
+    margin-left: 2rem;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Info */
+p > strong {
+    font-weight: bold;
+    display: inline-block;
+    width: 100px;
+}
+
+/* Links Styling */
+p > a {
+    font-size: 16px;
+    word-break: break-word;
+}
+
+/* Spacing for better readability */
+p, ul, h1, h2, h3 {
+    line-height: 1.5;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media only screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    p div {
+        margin-left: 0;
+        padding: 5px 0;
+    }
+
+    p[style*="flex-direction: row"] {
+        flex-direction: column;
+    }
+
+    ul {
+        margin-left: 10px;
+    }
+
+    ul li {
+        margin-left: 1rem;
+        font-size: 14px;
+    }
+
+    p[style*="display: flex"] {
+        flex-direction: column;
+    }
+
+    p[style*="flex-direction: row"] div {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* Adjust the columns */
+    p[style*="width: 50%"] {
+        width: 100%;
+    }
+
+    /* Remove fixed position for Experience section */
+    p div[style*="position: absolute"] {
+        position: static;
+        margin-bottom: 10px;
+    }
+
+    ul {
+        padding-left: 15px;
+    }
+}
